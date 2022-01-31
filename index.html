@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" href="icon.png">
+  <title>IMC Calculator</title>
+</head>
+<body>
+
+  <div class="container">
+ 
+      <h1>IMC Calculator</h1>
+      <p>Peso:</p>
+      <input id="weight" class="input" text="Peso" name="weight" type="number" placeholder="kg">
+      <p>Altura:</p>
+      <input id="height" class="input" text="Altura" name="height" type="number" placeholder="cm">
+
+      <button id="calculate">Calcular</button>
+
+      <div id="result"></div>
+
+      <table class="contentTable">
+        <tr>
+          <th>IMC</th>
+          <th>Classificação</th>
+          <th>Obesidade</th>
+        </tr>
+
+        <tr>
+          <td>menor que 18.5</td>
+          <td>Magreza</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Entre 18.5 e 24.9</td>
+          <td>Normal</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Entre 25.0 e 29.9</td>
+          <td>Sobrepeso</td>
+          <td>I</td>
+        </tr>
+        <tr>
+          <td>Entre 30.0 e 39.9</td>
+          <td>Obesidade</td>
+          <td>II</td>
+        </tr>
+        <tr>
+          <td>Maior que 40.0</td>
+          <td>Obesidade Grave</td>
+          <td>III</td>
+        </tr>
+      </table>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
