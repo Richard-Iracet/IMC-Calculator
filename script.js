@@ -1,24 +1,18 @@
 function IMCCalc() {
 
-  let inputWeight = document.querySelector("#weight");
-  let inputHeight = document.querySelector("#height");
-  let calculate = document.querySelector("#calculate");
-  let result = document.querySelector("#result");
+    let inputWeight = document.querySelector("#weight");
+    let inputHeight = document.querySelector("#height");
+    let calculate = document.querySelector("#calculate");
+    let result = document.querySelector("#result");
 
+    let weight = inputWeight.value;
+    let height = inputHeight.value;
 
-  let weight = inputWeight.value;
-  let height = inputHeight.value;
-
-  
     let heightMetters = height / 100;
     const IMC = (weight / (heightMetters * heightMetters)).toFixed(1);
 
-    console.log(`weight: ${weight}` )
-    console.log(`heightMetters: ${heightMetters}`)
-    console.log(`IMC: ${IMC}`)
-    
     let classification = '';
-
+  
     if (IMC < 18.5) {
       classification = 'abaixo do peso ideal.';
     } else if (IMC >= 18.5 && IMC < 24.9) {
