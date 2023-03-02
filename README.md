@@ -1,6 +1,6 @@
 # IMC-Calculator
 
-Esse projeto foi criado usando HTML, CSS e JavaScript.
+Esse projeto foi desenvolvido com HTML, CSS e JavaScript.
 
 A aplicação consiste em uma calculadora de Índice de Massa Corpórea, que indica se você está no peso ideal ou fora dele.
 
